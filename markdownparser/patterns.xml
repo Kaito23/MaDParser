@@ -1,0 +1,28 @@
+<elements>
+	<entry headline="quote">
+		<regex>&gt;{1}(.*)</regex>
+		<replacement>&lt;blockquote&gt;$1&lt;/blockquote&gt;</replacement>
+		<block>true</block>
+	</entry>
+	<entry headline="H1">
+		<regex>^#{1}([^#].*)$</regex>
+		<replacement>&lt;h1&gt;$1&lt;/h1&gt;</replacement>
+		<block>true</block>
+	</entry>
+	<entry headline="H2">
+		<regex>^#{2}([^#].*)$</regex>
+		<replacement>&lt;h2&gt;$1&lt;/h1&gt;</replacement>
+		<block>true</block>
+	</entry>
+	<entry headline="strong">
+		<regex>\*{2}(.*?)\*{2}</regex>
+		<replacement>&lt;b&gt;$1&lt;/b&gt;</replacement>
+		<block>false</block>
+	</entry>
+	<entry headline="italic">
+		<regex>\*{1}(.*?)\*{1}</regex>
+		<replacement>&lt;i&gt;$1&lt;/i&gt;</replacement>
+		<block>false</block>
+	</entry>
+	
+</elements>
